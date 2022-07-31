@@ -4,17 +4,17 @@ const emailField = document.querySelector("input#email");
 const passwordField = document.querySelector("input#password");
 
 // Change source of the image on focus
-emailField.addEventListener("click", () => {
+function changeMailIcon() {
   emailIcon.setAttribute("src", "./assets/mail-focus.svg");
-});
+}
 
 // Change source of the image on focus
-passwordField.addEventListener("click", () => {
+function changeLockIcon() {
   lockIcon.setAttribute("src", "./assets/lock-focus.svg");
-});
+}
 
 // Reset images after input loses focus
-function focusOut() {
+function resetImages() {
   emailIcon.setAttribute("src", "./assets/mail.svg");
   lockIcon.setAttribute("src", "./assets/lock.svg");
 }

@@ -40,7 +40,8 @@
         <div class="email">
           <label for="email">E-mail</label>
           <input
-            onfocusout="focusOut()"
+            onclick="changeMailIcon()"
+            onfocusout="resetImages()"
             type="email"
             id="email"
             name="email"
@@ -52,7 +53,8 @@
         <div class="password">
           <label for="password">Senha</label>
           <input
-            onfocusout="focusOut()"
+            onclick="changeLockIcon()"
+            onfocusout="resetImages()"
             type="password"
             id="password"
             name="password"
