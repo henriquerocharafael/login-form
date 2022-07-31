@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" type="text/css" href="./style.css" />
-</head>
-<body>
-  <main>
-    <header>
-      <img src="./assets/logo.svg" alt="Logo of the page" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./assets/logo.svg" alt="Logo of the page" />
 
-      <div>
-        <img src="./assets/login.svg" alt="Login icon" />
-        <h1>Faça seu login</h1>
-      </div>
-
-      <span>Entre com suas informações de cadastro.</span>
-    </header>
-
-    <form action="">
-      <div class="email">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-        <img class="mail" src="./assets/mail.svg" alt="Email icon" />
-      </div>
-
-      <div class="password">
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password" placeholder="Digite sua senha">
-        <img class="lock" src="./assets/lock.svg" alt="Lock icon" />
-        <img class="eye" src="./assets/eye.svg" alt="Eye icon" />
-      </div>
-
-      <div class="check">
         <div>
-          <input type="checkbox" id="check" name="check">
-          <label for="check">Lembre-me</label>
+          <img src="./assets/login.svg" alt="Login icon" />
+          <h1>Faça seu login</h1>
         </div>
 
-        <a href="#">Esqueci minha senha</a>
-      </div>
-      <button type="submit">Entrar</button>
-    </form>
+        <span>Entre com suas informações de cadastro.</span>
+      </header>
 
-    <footer>
-      <span>Não tem uma conta? <a href="#">Registre-se</a></span>
-    </footer>
-  </main>
-</body>
+      <form action="">
+        <div class="email">
+          <label for="email">E-mail</label>
+          <input
+            onfocusout="focusOut()"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+          />
+          <img class="mail" src="./assets/mail.svg" alt="Email icon" />
+        </div>
+
+        <div class="password">
+          <label for="password">Senha</label>
+          <input
+            onfocusout="focusOut()"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua senha"
+          />
+          <img class="lock" src="./assets/lock.svg" alt="Lock icon" />
+          <img class="eye" src="./assets/eye.svg" alt="Eye icon" />
+        </div>
+
+        <div class="check">
+          <div>
+            <input type="checkbox" id="check" name="check" />
+            <label for="check">Lembre-me</label>
+          </div>
+
+          <a href="#">Esqueci minha senha</a>
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
+
+      <footer>
+        <span>Não tem uma conta? <a href="#">Registre-se</a></span>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
 </html>

@@ -1,5 +1,20 @@
-const carros = ["fusca", "gol", "monza", "hb20"];
+const emailIcon = document.querySelector(".mail");
+const lockIcon = document.querySelector(".lock");
+const emailField = document.querySelector("input#email");
+const passwordField = document.querySelector("input#password");
 
-for (let count = 0; count < carros.length; count++) {
-  console.log(carros[count]);
+// Change source of the image on focus
+emailField.addEventListener("click", () => {
+  emailIcon.setAttribute("src", "./assets/mail-focus.svg");
+});
+
+// Change source of the image on focus
+passwordField.addEventListener("click", () => {
+  lockIcon.setAttribute("src", "./assets/lock-focus.svg");
+});
+
+// Reset images after input loses focus
+function focusOut() {
+  emailIcon.setAttribute("src", "./assets/mail.svg");
+  lockIcon.setAttribute("src", "./assets/lock.svg");
 }
